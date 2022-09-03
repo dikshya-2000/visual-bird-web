@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html>
+ <head>
+     <style>
+         body {
+      background-image: url("img/Lock down.png");
+      height: 100%;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: contain;
+      min-height: 100%;
+    }
+
+    h1 {
+        padding-left: 0.14em;
+        line-height: 0.9;
+        word-spacing: -5px;
+        width: 10%;
+        color: rgb(45, 46, 46);
+        text-align: left;
+        font-family:Arial Black;
+        font-size:400%;
+    }
+    p {
+        padding-left: 0.14em;
+        width: 38%;
+        text-align: left;
+        color:grey;
+        font-size:120%;
+    }
+    h2 {
+        padding-left: 0.14em;
+        text-align:left;
+        font-family:Arial;
+        font-size:200%;
+        color: rgb(80, 78, 78);
+    }
+    h3 {
+        padding-left: 0.14em;
+        text-align:left;
+        font-family:Arial;
+        font-size:120%;
+        color: rgb(80, 78, 78);
+    }
+    a:link {
+  color: rgb(48, 47, 47);
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: rgb(65, 63, 63);
+  background-color: transparent;
+  text-decoration: none;
+}
+a {
+  font-family: 'Arial Black';
+}
+    #myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+#myImg1 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg1:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal1 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content1 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption1 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content1, #caption1 {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close1 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close1:hover,
+.close1:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content1 {
+    width: 100%;
+  }
+}
+#myImg2 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg2:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal2 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content2 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption2 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content2, #caption2 {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close2 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close2:hover,
+.close2:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content2 {
+    width: 100%;
+  }
+}
+#myImg3 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg3:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal3 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content3 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption3 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content3, #caption3 {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close3 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close3:hover,
+.close3:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content3 {
+    width: 100%;
+  }
+}
+    </style>
+    <title>Lockdown Period</title>
+ </head>
+ <body>
+     <h1>LOCKDOWN PERIOD</h1>
+     <p>
+        On 24 March 2020, the Government of India under Prime Minister Narendra Modi ordered a nationwide lockdown for 21 days, limiting movement of the entire 1.3 billion population of India as a preventive measure against the COVID-19 pandemic in India. It was ordered after a 14-hour voluntary public curfew on 22 March, followed by enforcement of a series of regulations in the country's COVID-19 affected regions. The lockdown was placed when the number of confirmed positive coronavirus cases in India was approximately 500. Observers stated that the lockdown had slowed the growth rate of the pandemic by 6 April to a rate of doubling every six days, and by 18 April, to a rate of doubling every eight days.<br /><br>
+        As the end of the first lockdown period approached, state governments and other advisory committees recommended extending the lockdown. The governments of Odisha and Punjab extended the state lockdowns to 1 May. Maharashtra, Karnataka, West Bengal and Telangana followed suit. On 14 April, Prime minister Narendra Modi extended the nationwide lockdown until 3 May, with a conditional relaxations after 20 April for the regions where the spread had been contained or was minimal.<br /><br />
+        On 1 May, the Government of India extended the nationwide lockdown further by two weeks until 17 May. The Government divided all the districts into three zones based on the spread of the virus—green, red and orange—with relaxations applied accordingly. On 17 May, the lockdown was further extended till 31 May by the National Disaster Management Authority.<br /><br />
+        On 30 May, it was announced that lockdown restrictions were to be lifted from then onwards, while the ongoing lockdown would be further extended till 30 June for only the containment zones. Services would be resumed in a phased manner starting from 8 June. It was termed as "Unlock 1.0". Modi later clarified that the lockdown phase in the country was over and that 'unlock' had already begun.<br /><br />
+        The second phase of unlock, Unlock 2.0, was announced for the period of 1 to 31 July, with more ease in restrictions. Unlock 3.0 was announced for August. Similarly, Unlock 4.0 was announced for September and Unlock 5.0 for the month of October. In the same way, Unlock 6.0 was announced for the month of November, Unlock 7.0 was announced for the month of December. Unlock 8.0 was announced for the month of January, and Unlock 9.0 was announced for the month of February.
+     </p>
+     <h2>Lockdown</h2>
+     <hr size="0.5" width="400" align="left">
+     <h3>Phase 1 (25 March – 14 April)</h3>
+    <hr size="0.5" width="580" align="left">
+    <img id="myImg" src="img/india.png" style="width:400%;height:300%;max-width:400px" alt="India's Lockdown" />
+   <!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+    <p>
+        On 25 March, the first day of the lockdown, nearly all services and factories were suspended. People were hurrying to stock essentials in some parts. Arrests across the states were made for violating norms of lockdown such as venturing out for no emergency, opening businesses and home quarantine violations. The government held meetings with e-commerce websites and vendors to ensure a seamless supply of essential goods across the nation during the lockdown period. Several states announced relief funds for the poor and affected people while the central government was finalising a stimulus package.<br /><br />
+        On 26 March, finance minister Nirmala Sitharaman announced a ₹170,000 crore (US$24 billion) stimulus package to help those affected by the lockdown. The package was aimed to provide food security measures for poor households through direct cash transfers, free cereal and cooking gas for three months. It also provided insurance coverage for medical personnel.<br /><br />
+        On 27 March, the Reserve Bank of India announced a slew of measures to help mitigate the economic impacts of the lockdown.<br /><br />
+        Prior to the announcement of the nationwide lockdown, on 22 March, the government had announced that the Indian Railways would suspend passenger operations through 31 March. The national rail network has maintained its freight operations during the lockdown, to transport essential goods. On 29 March, the Indian Railways announced that it would start services for special parcel trains to transport essential goods, in addition to the regular freight service. The national rail operator also announced plans to convert coaches into isolation wards for patients of COVID-19. This has been described as the first time in 167 years that India's rail network had been suspended, although there was also a strike in 1974.<br /><br />
+        On 5 April, citizens all over India cheered and showed solidarity with the health workers, police, and all those fighting the disease by switching off the electric lights at home for 9 minutes from 9:00 p.m. to 9:09 p.m. and observed lighting diya, candle; and flashing torchlight and mobile flashlight.<br /><br />
+        As the end of the initial lockdown period came near, many state governments expressed their decision to extend it till the end of April. Among them were Odisha, Punjab, Maharashtra, Karnataka with some relaxations, West Bengal and Telangana.<br /><br />
+        Towards the end of the initial period, the rate of growth of COVID infections in India had significantly slowed, from a rate of doubling every three days prior to the lockdown to one of doubling every eight days on 18 April.
+    </p>
+    <h3>Phase 2 (15 April – 3 May)</h3>
+    <hr size="0.5" width="580" align="left">
+    <img id="myImg1" src="img/Lockdown 2.jpg" style="width:400%;height:300%;max-width:400px" alt="Lockdown" />
+   <!-- The Modal -->
+<div id="myModal1" class="modal1">
+  <span class="close1">&times;</span>
+  <img class="modal-content1" id="img02">
+  <div id="caption1"></div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal1");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg1");
+var modalImg = document.getElementById("img02");
+var captionText = document.getElementById("caption1");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close1")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+    <p>
+        On 14 April, Modi extended the nationwide lockdown till 3 May, with a conditional relaxation promised after 20 April for the regions where the spread had been contained by then. He said that every town, every police station area and every state would be carefully evaluated to see if it had contained the spread. The areas that were able to do so would be released from the lockdown on 20 April. If any new cases emerged in those areas, lockdown could be reimposed.<br /><br />
+        On 16 April, lockdown areas were classified as "red zone", indicating the presence of infection hotspots, "orange zone" indicating some infection, and "green zone" with no infections.<br /><br />
+        The government also announced certain relaxations from 20 April, allowing agricultural businesses, including dairy, aquaculture and plantations, as well as shops selling farming supplies, to open. Public works programmes were also allowed to reopen with instructions to maintain social distancing. Cargo transportation vehicles, including trucks, trains and planes, would run. Banks and government centres distributing benefits would open as well.<br /><br />
+        On 25 April, small retail shops were allowed to open with half the staff. Again social distancing norms were to be followed.<br /><br />
+        On 29 April, The Ministry of Home Affairs issued guidelines for the states to allow inter-state movement of the stranded persons. States have been asked to designate nodal authorities and form protocols to receive and send such persons. States have also been asked to screen the people, quarantine them and to do periodic health checkups.<br /><br />
+    </p>
+    <h3>Phase 3 (4–17 May)</h3>
+    <hr size="0.5" width="580" align="left">
+    <img id="myImg2" src="img/city.png" style="width:400%;height:300%;max-width:400px" alt="City Lockdown" />
+   <!-- The Modal -->
+<div id="myModal2" class="modal2">
+  <span class="close2">&times;</span>
+  <img class="modal-content2" id="img03">
+  <div id="caption2"></div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal2");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg2");
+var modalImg = document.getElementById("img03");
+var captionText = document.getElementById("caption2");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close2")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+    <p>
+        On 1 May, the Ministry of Home Affairs (MHA) and the Government of India (GoI) further extended the lockdown period to two weeks beyond 4 May, with some relaxations. The country has been split into 3 zones: red zones (130 districts), orange zones (284 districts) and green zones (319 districts). Red zones are those with high coronavirus cases and a high doubling rate, orange zones are those with comparatively fewer cases than red zone and green zones are those without any cases in the past 21 days. Normal movement is permitted in green zones with buses limited to 50 percent capacity. Orange zones would allow only private and hired vehicles but no public transportation. The red zones would remain under lockdown. The zone classification would be revised once a week.
+    </p>
+    <h3>Phase 4 (18–31 May)</h3>
+    <hr size="0.5" width="580" align="left">
+    <img id="myImg3" src="img/unlock.png" style="width:400%;height:300%;max-width:400px" alt="City at the last stage of lockdown" />
+   <!-- The Modal -->
+<div id="myModal3" class="modal3">
+  <span class="close3">&times;</span>
+  <img class="modal-content3" id="img04">
+  <div id="caption3"></div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal3");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg3");
+var modalImg = document.getElementById("img04");
+var captionText = document.getElementById("caption3");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close3")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+    <p>
+        On 17 May, the National Disaster Management Authority (NDMA) and the Ministry of Home Affairs (MHA) extended the lockdown for a period for two weeks beyond 18 May, with additional relaxations. Unlike the previous extensions, states were given a larger say in the demarcation of Green, Orange and Red zones and the implementation roadmap. Red zones were further divided into to containment and buffer zones. The local bodies were given the authority to demarcate containment and buffer zones.<br /><br />
+        For more details <a href="Lockdown.html" target="_top">click here</a>
+    </p>
+</body>
+</html>

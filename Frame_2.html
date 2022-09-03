@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+ <head>
+     <style>
+         body {
+      background-image: url("img/hand.png");
+      height: 100%;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-position: right;
+      
+      min-height: 100%;
+    }
+         h1 {
+        padding-left: 0.14em;
+        line-height: 0.9;
+        word-spacing: -5px;
+        width: 10%;
+        color: rgb(45, 46, 46);
+        text-align: left;
+        font-family:Arial Black;
+        font-size:400%;
+    }
+    h2 {
+        padding-left: 0.14em;
+        text-align:left;
+        font-family:Arial;
+        font-size:200%;
+        color: rgb(80, 78, 78);
+    }
+    h3 {
+        padding-left: 0.14em;
+        text-align:left;
+        font-family:Arial;
+        font-size:120%;
+        color: rgb(80, 78, 78);
+    }
+    p {
+        padding-left: 0.14em;
+        width: 25%;
+        text-align: left;
+        color:grey;
+        font-size:120%;
+    }
+    hr {
+      border-top:1px solid black;
+    }
+    ul.a {
+      color:grey;
+    }
+    ul.a li::before {
+      content: "\2022";
+      color: black;
+      font-weight: bold;
+      display: inline-block; 
+      width: 1em;
+      margin-left: -1em;
+    }
+    ul.b {
+        color:grey;
+        list-style-type: circle;
+    }
+    a:link {
+  color: rgb(48, 47, 47);
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: rgb(65, 63, 63);
+  background-color: transparent;
+  text-decoration: none;
+}
+a {
+  font-family: 'Arial Black';
+}
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+#myImg1 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg1:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal1 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content1 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption1 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content1, #caption1 {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close1 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close1:hover,
+.close1:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content1 {
+    width: 100%;
+  }
+}
+     </style>
+    <title>Do's and Dont's</title>
+    </head>
+    <body>
+        <h1>DO'S AND DONT'S</h1>
+        <h2>DO'S</h2>
+        <hr size="0.5" width="300" align="left">
+        <h3>What to do to keep yourself and others safe from COVID-19</h3>
+        <hr size="0.5" width="610" align="left">
+        <img id="myImg" src="img/DOs.jpg" style="width:400%;height:300%;max-width:400px" alt="Do's" />
+   <!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script> 
+    <p>
+        <ul class="a">
+            <li><b>Maintain at least a 1-metre distance between yourself and others</b> to reduce your risk of<br />
+                 infection when they cough, sneeze or speak. Maintain an even greater distance between<br />
+                  yourself and others when indoors. The further away, the better.</li>
+                  <li><b>Make wearing a mask a normal part of being around other people.<br />
+                     The appropriate use, storage and cleaning or disposal are essential to<br />
+                      make masks as effective as possible.</b></li>
+        </ul>
+    </p>
+    <p>
+    Here are the basics of <u>how to wear a mask</u>:
+    <ul class="a">
+        <li>Clean your hands before you put your mask on, as well as<br />
+             before and after<br />
+             you take it off, and after you touch it at any time.</li>
+             <li>Make sure it covers both your nose, mouth and chin.</li>
+             <li>When you take off a mask, store it in a clean plastic bag, and every day<br />
+                 wash it if it’s a fabric mask, or dispose of a medical mask in a trash bin.</li>
+                 <li>Don’t use masks with valves.</li>
+    </ul>
+</p>
+<h3>How to make your environment safer</h3>
+<hr size="0.5" width="520" align="left">
+<p>
+    <ul class="a">
+        <li><b>Avoid the 3Cs: spaces that are <u>c</u>losed, <u>c</u>rowded or involve <u>c</u>lose contact.</b></li>
+    </ul>
+    <ul class="b">
+        <li>Outbreaks have been reported in restaurants, choir practices, fitness classes,<br />
+             nightclubs, offices and places of worship where people have gathered,<br />
+              often in crowded indoor settings where they talk loudly, shout, breathe<br />
+               heavily or sing.
+             
+             </li>
+    </ul>
+    <ul class="a">
+        <li><b>Meet people outside.</b> Outdoor gatherings are safer than indoor ones,<br />
+             particularly if indoor<br />
+             spaces are small and without outdoor air coming in.</li>
+             <li><b>Avoid crowded or indoor settings</b> but if you can’t, then take precautions:</li>
+    </ul>
+    <ul class="b">
+        <li><b>Open a window.</b> Increase the amount of ‘natural ventilation’ when indoors.</li>
+        <li>Wear a mask.</li>
+    </ul>
+    <h3>Don’t forget the basics of good hygiene</h3>
+        <hr size="0.5" width="550" align="left">
+        <ul class="a">
+            <li><b>Regularly and thoroughly clean your hands with an alcohol-based hand rub<br />
+                 or wash them with soap and water.</b> This eliminates germs including viruses<br />
+                 that may be on your hands.</li>
+            <li><b>Avoid touching your eyes, nose and mouth. </b>Hands touch many surfaces and can pick up<br />
+                 viruses. Once contaminated, hands can transfer the virus to your eyes, nose or mouth.<br />
+                  From there, the virus can enter your body and infect you.</li>
+            <li><b>Cover your mouth and nose with your bent elbow or tissue when you cough or sneeze. </b><br />
+                Then dispose of the used tissue immediately into a closed bin and wash your hands.<br />
+                 By following good ‘respiratory hygiene’, you protect the people around you from viruses,<br />
+                  which cause colds, flu and COVID-19.</li>
+            <li><b>Clean and disinfect surfaces frequently especially those which are regularly touched, </b><br />
+                such as door handles, faucets and phone screens.</li>
+        </ul>
+    </p>
+    <h3>What to do if you feel unwell</h3>
+        <hr size="0.5" width="500" align="left">
+    <p>
+        <ul class="a">
+            <li><b>Know the full range of symptoms of COVID-19. </b> The most common<br />
+                 symptoms of COVID-19 are fever, dry cough, and tiredness. Other symptoms<br />
+                 that are less common and may affect some patients include loss of taste or<br />
+                 smell, aches and pains, headache, sore throat, nasal congestion, red eyes,<br />
+                 diarrhoea, or a skin rash.</li>
+            <li><b>Stay home and self-isolate even if you have minor symptoms such as<br />
+                   cough, headache, mild fever, </b>until you recover. Call your health<br />
+                   are provider or hotline for advice. Have someone bring you supplies.<br />
+                   If you need to leave your house or have someone near you, wear a medical<br />
+                   mask to avoid infecting others.<br /></li>
+            <li><b>If you have a fever, cough and difficulty breathing, seek medical attention<br />
+                   immediately. Call by telephone first, if you can </b> and follow the directions<br />
+                   of your local health authority.</li>
+            <li><b>Keep up to date on the latest information from trusted sources, such as WHO<br />
+                   or your local and national health authorities.</b> Local and national authorities and public<br />
+                   health units are best placed to advise on what people in your area should be doing to protect<br />
+                   themselves.</li>
+         </ul>
+        </p>
+    <h2>DONT'S</h2>
+    <hr size="0.5" width="300" align="left">
+    <img id="myImg1" src="img/Donts.jpg" style="width:400%;height:300%;max-width:400px" alt="Dont's" />
+   <!-- The Modal -->
+<div id="myModal1" class="modal1">
+  <span class="close1">&times;</span>
+  <img class="modal-content1" id="img02">
+  <div id="caption1"></div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal1");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg1");
+var modalImg = document.getElementById("img02");
+var captionText = document.getElementById("caption1");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close1")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+    <p>
+    <b>DON’T</b> touch your eyes, nose, and mouth. If you have somehow come into contact with the virus, touching your face can help it enter your body.<br /><br />
+    <b>DON’T</b> wear a mask unless you’re sick. Masks help protect others from catching the virus, but wearing one when you’re healthy won’t do much. Demand has been so high in the U.S. that health care workeres are improvising. Leave the masks for people who really need them, like the sick or health care professionals.<br /><br />
+    <b>DON’T</b> assume young people won’t get gravely ill or even die. As of March 16, 38% of all hospitalizations were of people 20-to-54 years old.<br /><br />
+    <b>DON’T</b> travel if you have a fever. If you get sick on flight, tell crew immediately. When you get home, contact a health professional.<br /><br />
+    <b>DON’T</b> panic. Public health officials still say the risk of becoming infected with COVID-19 is low, but your risk level is likely to rise as the virus spreads across the country. Taking proper precautions -- wash your hands! -- and making preparations are the best things you can do.<br /><br />
+    <b>DON’T</b> skip the flu shot. The symptoms of COVID-19 and flu overlap enough that it can complicate diagnosis. If you’ve had a flu shot, you’re less likely to catch the flu or have a case serious enough to require treatment.<br /><br />
+    <b>DON’T</b> go to the doctor unless it’s urgent. And reschedule your dental cleaning. The CDC is urging all health care professionals to focus on emergency treatments now.<br /><br />
+    <b>DON’T</b> avoid toys or products from Asia. Although the virus can live on surfaces for hours and possibly several days, it’s unlikely to survive the process of being moved from place to place in different temperatures and conditions.
+    </p>
+    <h3>Don’ts When You Don’t Feel Well</h3>
+    <hr size="0.5" width="440" align="left">
+    <p>
+        <b>DON’T</b> go out except to see your doctor, after calling first. And if you do have to go out, avoid public transportation, taxis, and ride-sharing.<br /><br />
+        <b>DON’T</b> hang out with your family or pets if you suspect you have the virus. In order to protect them, eat and sleep separately from them, try to stay in one room, and use a separate bathroom if possible. Yes, pets are included in the recommendations.The CDC says experts don’t know for sure whether pets can catch it.<br /><br />
+        <b>DON’T</b> reach for antibiotics. If you happen to have some lying around from a previous illness, you may be tempted. But antibiotics work only on illnesses caused by bacteria, and the coronavirus is -- you guessed it -- a virus.<br /><br />
+    </p>
+    <h3>Don’ts When You’re Caring for Someone Who May Have It</h3>
+    <hr size="0.5" width="550" align="left">
+    <p>
+        <b>DON’T</b> hesitate to seek help immediately if someone in your home is experiencing these emergency warning signs:
+        <ul class="a">
+            <li>Persistent pain or pressure in the chest.</li>
+            <li>New confusion or inability to arouse.</li>
+            <li>Bluish lips or face.</li>
+        </ul>
+    </p>
+    <p>
+        <b>DON’T</b> share household items like dishes and glasses -- and definitely not bedding and towels. They should be washed thoroughly before being used again.<br /><br />
+        <b>DON’T</b> go near seniors or those at higher risk for severe illness. You may be able to transmit the virus even if you feel fine. Now is not the time to pay a visit to grandma, or your friend with asthma.<br /><br />
+        For more details <a href="Do's & Dont's.html" target="_top">click here</a>
+    </p>
+
+ </body>
+</html>  
+    

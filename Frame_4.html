@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <style>
+        body {
+            background-image: url("img/Face key copy.png");
+      height: 100%;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      
+      min-height: 100%;
+    }
+    
+    p {
+        padding-left: 0.14em;
+        width: 25%;
+        text-align: left;
+        color:grey;
+        font-size:120%;
+    }
+    h1 {
+        padding-left: 0.14em;
+        line-height: 0.9;
+        word-spacing: -5px;
+        width: 29%;
+        color: rgb(45, 46, 46);
+        text-align: left;
+        font-family:Arial Black;
+        font-size:400%;
+    }
+    h2 {
+        padding-left: 0.14em;
+        text-align:left;
+        font-family:Arial;
+        font-size:200%;
+        color: rgb(80, 78, 78);
+    }
+    p {
+        padding-left: 0.14em;
+        width: 25%;
+        text-align: left;
+        color:grey;
+        font-size:120%;
+    }
+    hr {
+      border-top:1px solid black;
+    }
+    ul {
+      color:grey;
+    }
+    ul li::before {
+      content: "\2022";
+      color: black;
+      font-weight: bold;
+      display: inline-block; 
+      width: 1em;
+      margin-left: -1em;
+    }
+    a:link {
+  color: rgb(48, 47, 47);
+  background-color: transparent;
+  text-decoration: none;
+ }
+    a:visited {
+  color: rgb(65, 63, 63);
+  background-color: transparent;
+  text-decoration: none;
+ }
+    a {
+  font-family: 'Arial Black';
+ }
+ #myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+#myImg1 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg1:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal1 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content1 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption1 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content1, #caption1 {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close1 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close1:hover,
+.close1:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content1 {
+    width: 100%;
+  }
+}
+#myImg2 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg2:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal2 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content2 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption2 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content2, #caption2 {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close2 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close2:hover,
+.close2:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content2 {
+    width: 100%;
+  }
+}
+#myImg3 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg3:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal3 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content3 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption3 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content3, #caption3 {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close3 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close3:hover,
+.close3:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content3 {
+    width: 100%;
+  }
+}
+#myImg4 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg4:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal4 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content4 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption4 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content4, #caption4 {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close4 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close4:hover,
+.close4:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content4 {
+    width: 100%;
+  }
+}
+    </style>
+    <title>After Lockdown</title>
+ </head>
+  <body>
+      <h1>AFTER LOCKDOWN</h1>
+    <h2>Unlock 1</h2>
+    <hr size="0.5" width="800" align="left">
+    <img id="myImg" src="img/1.png" style="width:400%;height:300%;max-width:400px" alt="Unlock 1" />
+    <!-- The Modal -->
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>
+  
+  <script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
+  
+  // Get the image and insert it inside the modal - use its "alt" text as a caption
+  var img = document.getElementById("myImg");
+  var modalImg = document.getElementById("img01");
+  var captionText = document.getElementById("caption");
+  img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() { 
+    modal.style.display = "none";
+  }
+  </script>
+    <p>
+        <ul>
+            <li>On <b>1 June</b> Delhi allowed all industries and markets to reopen including barber shops and salons; curfew time changed to 9pm to<br /> 
+            5am while educational institutes were to remain closed. Numerous public utilities, businesses and activities such as gymnasiums,<br />
+            cinema halls and the Delhi Metro to remain closed.</li>
+
+            <li>On <b>2 June</b> mobile manufacturing incentives were offered by the government to mobile manufacturers. This included a ₹50,000 crore<br />
+            (US$7.0 billion) production-linked incentive on goods made locally in India. Five Indian firms would also be selected for the scheme.</li>
+        
+            <li>On <b>8 June</b> religious places, malls and restaurants were permitted to open all over India, expect in the containment zones.</li>
+
+            <li>On <b>20 June</b> the Garib Kalyan Rojgar Abhiyaan was launched to tackle the impact of COVID-19 on migrant workers in India.<br />
+            It is a rural public works scheme with an initial funding of ₹50,000 crore (US$7.0 billion) covering 116 districts in 6 states.</li>
+        </ul>
+    </p>
+    <h2>Unlock 2</h2>
+    <hr size="0.5" width="800" align="left">
+    <img id="myImg1" src="img/2.png" style="width:400%;height:300%;max-width:400px" alt="Unlock 2" />
+    <!-- The Modal -->
+<div id="myModal1" class="modal1">
+    <span class="close1">&times;</span>
+    <img class="modal-content1" id="img02">
+    <div id="caption1"></div>
+  </div>
+  
+  <script>
+  // Get the modal
+  var modal = document.getElementById("myModal1");
+  
+  // Get the image and insert it inside the modal - use its "alt" text as a caption
+  var img = document.getElementById("myImg1");
+  var modalImg = document.getElementById("img02");
+  var captionText = document.getElementById("caption1");
+  img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close1")[0];
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() { 
+    modal.style.display = "none";
+  }
+  </script>
+    <p>
+        <ul>
+            <li>On <b>1 July</b> new guidelines came into place related to the lockdown.<br />
+            While there were certain relaxations; schools, colleges, gyms,<br />
+            movie halls, metros etc. will remain closed.</li>
+
+            <li>On <b>29 July</b>, the Cabinet of India passed the National Educational<br />
+            Policy 2020 aimed at strengthening India's education sector and<br />
+            in turn the economy.</li>
+        </ul>
+    </p>
+    <h2>Unlock 3</h2>
+    <hr size="0.5" width="800" align="left">
+    <img id="myImg2" src="img/3.png" style="width:400%;height:300%;max-width:400px" alt="Unlock 3" />
+   <!-- The Modal -->
+<div id="myModal2" class="modal2">
+  <span class="close2">&times;</span>
+  <img class="modal-content2" id="img03">
+  <div id="caption2"></div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal2");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg2");
+var modalImg = document.getElementById("img03");
+var captionText = document.getElementById("caption2");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close2")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+    <p>
+    <ul>
+        <li>From <b>5 August</b> onwards gym and yoga centres could begin opening.</li>
+        <li>On <b>11 August</b>, in a video-conference between the Prime Minister and states,<br />
+        the states asked for more funding to fight COVID-19.</li>
+        <li>On <b>23 August</b>, the government announced economic measures to<br />
+        tackle effect of COVID-19.</li>
+        <li>On <b>30 August</b>, the government announced more economic measures.</li>
+    </ul>
+    </p>
+    <h2>Unlock 4</h2>
+    <hr size="0.5" width="800" align="left">
+    <img id="myImg3" src="img/4.png" style="width:400%;height:300%;max-width:400px" alt="Unlock 4" />
+   <!-- The Modal -->
+<div id="myModal3" class="modal3">
+  <span class="close3">&times;</span>
+  <img class="modal-content3" id="img04">
+  <div id="caption3"></div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal3");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg3");
+var modalImg = document.getElementById("img04");
+var captionText = document.getElementById("caption3");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close3")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+    <p>
+    <ul>
+        <li>On <b>1 September</b> new guidelines were announced by the centre<br />
+        as well as the states in the graded re-opening of the economy and society.</li>
+        <li>On <b>11 September</b> Delhi Metro resumed normal operations with pre-COVID-19 timings.</li>
+    </ul>
+    </p>
+    <h2>Unlock 5</h2>
+    <hr size="0.5" width="800" align="left">
+    <img id="myImg4" src="img/5.png" style="width:400%;height:300%;max-width:400px" alt="Unlock 5" />
+   <!-- The Modal -->
+<div id="myModal4" class="modal4">
+  <span class="close4">&times;</span>
+  <img class="modal-content4" id="img05">
+  <div id="caption4"></div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal4");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg4");
+var modalImg = document.getElementById("img05");
+var captionText = document.getElementById("caption4");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close4")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+    <p>
+    <ul>
+        <li>In <b>October</b>, unlock 5 began seeing more of society and the economy open up.</li>
+        <li>In <b>October</b>, cinemas reopen as a part of Unlock 5 as India bends the COVID-19 pandemic curve.</li>
+        <li>On <b>12 October</b>, the government announced a ₹73,000 crore (US$10 billion) worth economic stimulus<br />
+        package, labelled as Atmanirbhar Bharat Abhiyan 2.0.</li>
+    </ul>
+    </p>
+    <p>
+    For more details <a href="After Lockdown.html" target="_top">click here</a>
+    </p>
+  </body>
+  </html>
